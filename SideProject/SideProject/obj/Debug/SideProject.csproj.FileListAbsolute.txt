@@ -1,0 +1,21 @@
+C:\workspace\SideProject\SideProject\SideProject\bin\Debug\SideProject.exe.config
+C:\workspace\SideProject\SideProject\SideProject\bin\Debug\SideProject.exe
+C:\workspace\SideProject\SideProject\SideProject\bin\Debug\SideProject.pdb
+C:\workspace\SideProject\SideProject\SideProject\obj\Debug\SideProject.csprojAssemblyReference.cache
+C:\workspace\SideProject\SideProject\SideProject\obj\Debug\SideProject.csproj.CoreCompileInputs.cache
+C:\workspace\SideProject\SideProject\SideProject\obj\Debug\SideProject.exe
+C:\workspace\SideProject\SideProject\SideProject\obj\Debug\SideProject.pdb
+C:\Users\15133\Desktop\Tech Elevator\side-project\SideProject\SideProject\bin\Debug\SideProject.exe.config
+C:\Users\15133\Desktop\Tech Elevator\side-project\SideProject\SideProject\bin\Debug\SideProject.exe
+C:\Users\15133\Desktop\Tech Elevator\side-project\SideProject\SideProject\bin\Debug\SideProject.pdb
+C:\Users\15133\Desktop\Tech Elevator\side-project\SideProject\SideProject\obj\Debug\SideProject.csprojResolveAssemblyReference.cache
+C:\Users\15133\Desktop\Tech Elevator\side-project\SideProject\SideProject\obj\Debug\SideProject.csproj.CoreCompileInputs.cache
+C:\Users\15133\Desktop\Tech Elevator\side-project\SideProject\SideProject\obj\Debug\SideProject.exe
+C:\Users\15133\Desktop\Tech Elevator\side-project\SideProject\SideProject\obj\Debug\SideProject.pdb
+D:\SideProject\SideProject\bin\Debug\SideProject.exe.config
+D:\SideProject\SideProject\bin\Debug\SideProject.exe
+D:\SideProject\SideProject\bin\Debug\SideProject.pdb
+D:\SideProject\SideProject\obj\Debug\SideProject.csprojAssemblyReference.cache
+D:\SideProject\SideProject\obj\Debug\SideProject.csproj.CoreCompileInputs.cache
+D:\SideProject\SideProject\obj\Debug\SideProject.exe
+D:\SideProject\SideProject\obj\Debug\SideProject.pdb
