@@ -9,7 +9,7 @@ When the program starts you are asked to specify a board size i.e. 8 => 8x8 boar
 1,1 is the bottom left corner
 
 Your knight will be placed at the position of your choosing. You will be given all the possible moves the knight can make
-with a unique number for each possible move. The number that is a different color than the rest is your best possible move
+with a unique number for each possible move. The number that is yellow is your best possible move
 according to the move that will let you "tour" across the whole board, touching each square once. 
 
 Once a square is touched or landed on by the knight, you are unable to go back to that square again.
@@ -19,3 +19,5 @@ every move.
 
 The vision is that a second knight will be added and two people will play until a player is unable to make a move
 or a knight is captured. 
+
+Needs exception handling
