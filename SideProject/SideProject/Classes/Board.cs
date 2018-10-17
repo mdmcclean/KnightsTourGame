@@ -24,6 +24,26 @@ namespace SideProject
             }
         }
 
+        public bool WinGame(Knight knight)
+        {
+            bool winGame = true;
+            for (int i = 0; i < BoardSize; i++)
+            {
+                for (int j = 0; j < BoardSize; j++)
+                {
+                    if(knightBoard[i, j] == true)
+                    {
+                        if (knight.CurrentX != i && knight.CurrentY != j)
+                        {
+                            winGame = false;
+                        }
+                    }
+                }
+            }
+            return winGame;
+
+        }
+
 
 
     }

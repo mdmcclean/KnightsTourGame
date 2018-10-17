@@ -13,18 +13,73 @@ namespace SideProject
             int startingX = 0;
             int startingY = 0;
             int boardsize = 0;
+            bool goodInput = false;
             Console.WriteLine("What size do you want the board? (8 is the normal sized chess board)");
-            boardsize = int.Parse(Console.ReadLine());
-            Console.WriteLine("What X position do you want the knight to start?");
-            startingX = int.Parse(Console.ReadLine());
-            Console.WriteLine("What Y position do you want the knight to start?");
-            startingY = int.Parse(Console.ReadLine());
-            Board board = new Board(boardsize);
+            while (!goodInput)
+            {
+                try
+                {
+                    boardsize = int.Parse(Console.ReadLine());
+                    goodInput = true;
+                }
+                catch
+                {
+                    Console.WriteLine("Not valid input.. enter a number");
+                }
+            }
 
+            Console.WriteLine("What X position do you want the knight to start?");
+            goodInput = false;
+            while(!goodInput)
+            {
+                try
+                {
+                    startingX = int.Parse(Console.ReadLine());
+                    if(startingX > 0 && startingX <= boardsize)
+                    {
+                        goodInput = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Starting position must be between 1 and {boardsize}");
+                    }
+                }
+                catch
+                {
+                    Console.WriteLine($"Not valid input... Starting position must be between 1 and {boardsize}");
+
+                }
+            }
+
+            Console.WriteLine("What Y position do you want the knight to start?"); goodInput = false;
+            while (!goodInput)
+            {
+                try
+                {
+                    startingY = int.Parse(Console.ReadLine());
+                    if (startingY > 0 && startingY <= boardsize)
+                    {
+                        goodInput = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Starting position must be between 1 and {boardsize}");
+                    }
+                }
+                catch
+                {
+                    Console.WriteLine($"Not valid input... Starting position must be between 1 and {boardsize}");
+
+                }
+            }
+
+            Board board = new Board(boardsize);
+            bool noMoreMoves = false;
             Knight knight = new Knight(boardsize - startingY, startingX - 1, board);
             
-            while (true)
+            while (!noMoreMoves)
             {
+                noMoreMoves = true;
                 List<int> knightAvailMoveIndex = new List<int>();
 
                 knightAvailMoveIndex = knight.CheckValidMoves();
@@ -36,14 +91,14 @@ namespace SideProject
                     yMove.Add(knight.moveY[move]);
                     xMove.Add(knight.moveX[move]);
                 }
-                bool possMove = false;
+                bool possibleMove = false;
                 Console.Clear();
                 for (int i = 0; i < board.BoardSize; i++)
                 {
                     Console.WriteLine();
                     for (int j = 0; j < board.BoardSize; j++)
                     {
-                        possMove = false;
+                        possibleMove = false;
                         for (int k = 0; k < xMove.Count; k++)
                         {
                             if (i == knight.CurrentX + xMove[k] && j == knight.CurrentY + yMove[k])
@@ -58,10 +113,11 @@ namespace SideProject
                                 }
                                 Console.Write($" {k+1} ");
                                 Console.ResetColor();
-                                possMove = true;
+                                possibleMove = true;
+                                noMoreMoves = false;
                             }
                         }
-                        if (!possMove)
+                        if (!possibleMove)
                         {
                             if (i == knight.CurrentX && j == knight.CurrentY)
                             {
@@ -103,15 +159,39 @@ namespace SideProject
 
                 int[] nextMove = new int[2];
                 int selection;
-                    Console.Write("\nWhere would you like to move next? Make a number selection: ");
-                selection = int.Parse(Console.ReadLine());
+                if (!noMoreMoves)
+                {
+                    goodInput = false;
+                    while (!goodInput)
+                    {
+                        try
+                        {
+                            Console.Write("\nWhere would you like to move next? Make a number selection: ");
+                            selection = int.Parse(Console.ReadLine());
 
-                nextMove[0] = xMove[selection - 1];
-                nextMove[1] = yMove[selection - 1];
+                            nextMove[0] = xMove[selection - 1];
+                            nextMove[1] = yMove[selection - 1];
 
-                
-                knight.MoveKnight(nextMove[0], nextMove[1]);
+
+                            knight.MoveKnight(nextMove[0], nextMove[1]);
+                            goodInput = true;
+                        }
+                        catch
+                        {
+                            Console.WriteLine("Not a valid move...");
+                        }
+                    }
+                }
             }
+            if (board.WinGame(knight))
+            {
+                Console.WriteLine("\nCongratulations! You've completed the Knights Tour!");
+            }
+            else
+            {
+                Console.WriteLine("\nThere are no more possible moves... You lose.");
+            }
+            Console.ReadKey();
         }
     }
 }
