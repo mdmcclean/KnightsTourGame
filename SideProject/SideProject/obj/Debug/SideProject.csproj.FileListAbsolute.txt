@@ -26,3 +26,10 @@ C:\Users\15133\Desktop\Tech Elevator\KnightsTourGame\SideProject\SideProject\obj
 C:\Users\15133\Desktop\Tech Elevator\KnightsTourGame\SideProject\SideProject\obj\Debug\SideProject.csproj.CoreCompileInputs.cache
 C:\Users\15133\Desktop\Tech Elevator\KnightsTourGame\SideProject\SideProject\obj\Debug\SideProject.exe
 C:\Users\15133\Desktop\Tech Elevator\KnightsTourGame\SideProject\SideProject\obj\Debug\SideProject.pdb
+C:\Users\mmcclean\Desktop\Tech Elevator\KnightsTourGame\SideProject\SideProject\bin\Debug\SideProject.exe.config
+C:\Users\mmcclean\Desktop\Tech Elevator\KnightsTourGame\SideProject\SideProject\bin\Debug\SideProject.exe
+C:\Users\mmcclean\Desktop\Tech Elevator\KnightsTourGame\SideProject\SideProject\bin\Debug\SideProject.pdb
+C:\Users\mmcclean\Desktop\Tech Elevator\KnightsTourGame\SideProject\SideProject\obj\Debug\SideProject.csprojAssemblyReference.cache
+C:\Users\mmcclean\Desktop\Tech Elevator\KnightsTourGame\SideProject\SideProject\obj\Debug\SideProject.csproj.CoreCompileInputs.cache
+C:\Users\mmcclean\Desktop\Tech Elevator\KnightsTourGame\SideProject\SideProject\obj\Debug\SideProject.exe
+C:\Users\mmcclean\Desktop\Tech Elevator\KnightsTourGame\SideProject\SideProject\obj\Debug\SideProject.pdb

@@ -20,4 +20,4 @@ every move.
 The vision is that a second knight will be added and two people will play until a player is unable to make a move
 or a knight is captured. 
 
-Needs exception handling
+
