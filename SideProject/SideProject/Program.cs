@@ -167,7 +167,7 @@ namespace SideProject
                         try
                         {
                             Console.Write("\nWhere would you like to move next? Make a number selection: ");
-                            selection = int.Parse(Console.ReadLine());
+                            selection = int.Parse(Console.ReadKey().KeyChar.ToString());
 
                             nextMove[0] = xMove[selection - 1];
                             nextMove[1] = yMove[selection - 1];

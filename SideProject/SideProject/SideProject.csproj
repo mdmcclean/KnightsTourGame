@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Classes\Board.cs" />
     <Compile Include="Classes\Knight.cs" />
+    <Compile Include="Classes\Square.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
